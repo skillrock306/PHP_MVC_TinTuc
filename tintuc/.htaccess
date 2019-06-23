@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteRule ^trang-chu$ index.php
+RewriteRule ^dang-nhap$ dangnhap.php
+RewriteRule ^dang-ki$ dangki.php
+RewriteRule ^([a-zA-Z0-9_-]+)-([0-9]+)$ loaitin.php?alias=$1&id_loai=$2
+RewriteRule ^([a-zA-Z0-9_-]+)-([0-9]+)/page=([0-9]+)$ loaitin.php?alias=$1&id_loai=$2&page=$3
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+).html$ chitiet.php?loai_tin=$1&alias=$2&id_tin=$3
