@@ -1,5 +1,6 @@
 <?php
 include('controller/c_tintuc.php');
+//ABC
 $c_tintuc = new C_tintuc();
 if (isset($_POST['tukhoa'])) {
 	$key = $_POST['tukhoa'];
